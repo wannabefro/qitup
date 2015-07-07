@@ -11,3 +11,9 @@
 /log/*
 !/log/.keep
 /tmp
+/vendor/dist
+/vendor/src
+/frontend/node_modules
+/frontend/tmp
+/frontend/bower_components
+/node_modules
