@@ -1,0 +1,17 @@
+<h1>Create your song</h1>
+
+<form class="ui form" {{action 'save'}}>
+  <h4 class="ui dividing header">Song Details</h4>
+  <div class="field">
+    <label>Name</label>
+    {{input value=model.name name="name"}}
+  </div>
+
+  <button type="submit" class="ui primary submit button">
+    Save
+  </button>
+  <button {{action 'cancel'}} class="ui button">
+    Discard
+  </button>
+  <div class="ui error message"></div>
+</form>
