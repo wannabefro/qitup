@@ -1,0 +1,26 @@
+<h1>Create your set</h1>
+
+<form class="ui form">
+  <h4 class="ui dividing header">Set Details</h4>
+  <div class="field">
+    <label>Name</label>
+    {{input value=model.name name="name"}}
+  </div>
+
+  <h4 class="ui dividing header">Add Some Songs</h4>
+  <div class="field">
+    {{#x-select value=model.songs multiple=true class="ui dropdown"}}
+      {{#each songs as |song|}}
+        {{#x-option value=song}}{{song.name}}{{/x-option}}
+      {{/each}}
+    {{/x-select}}
+  </div>
+
+  <button {{action 'save'}} type="submit" class="ui primary submit button">
+    Save
+  </button>
+  <button {{action 'cancel'}} class="ui button">
+    Discard
+  </button>
+  <div class="ui error message"></div>
+</form>

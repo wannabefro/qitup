@@ -1,12 +1,12 @@
-<h1>Your Songs</h1>
+<h1>Your Sets</h1>
 
 <button class="ui primary labeled icon button">
   <i class="add icon"></i>
-  New Song
+  New Set
 </button>
 
 <div class="ui items">
-  {{#each model as |song|}}
-    {{song-item song=song}}
+  {{#each model as |performance|}}
+    {{performance-item performance=performance}}
   {{/each}}
 </div>

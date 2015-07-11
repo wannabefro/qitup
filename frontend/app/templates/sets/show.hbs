@@ -1,0 +1,9 @@
+<h1>{{model.name}}</h1>
+
+<h3 class="ui dividing header">Songs</h3>
+
+<div class="ui items">
+  {{#each model.songs as |song|}}
+    {{song-item song=song}}
+  {{/each}}
+</div>

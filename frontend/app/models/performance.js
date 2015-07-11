@@ -2,5 +2,5 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr(),
-  performances: DS.hasMany('performance', { async: true })
+  songs: DS.hasMany('song', { async: true })
 });
